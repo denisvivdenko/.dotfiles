@@ -26,12 +26,16 @@ return require('packer').startup(function(use)
 		    ts_update()
 	end,
   })
+  use 'Mofiqul/vscode.nvim'
   use 'widatama/vim-phoenix'
   use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
   use("nvim-treesitter/nvim-treesitter-context");
   use { "ellisonleao/gruvbox.nvim" }
-
+  use 'nvim-tree/nvim-tree.lua'
+  use 'nvim-tree/nvim-web-devicons'
+  use 'terrortylor/nvim-comment'
+  use {"smjonas/inc-rename.nvim"}
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
